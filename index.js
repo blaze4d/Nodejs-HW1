@@ -22,6 +22,8 @@
             res.setHeader('Content-Type', 'application/json');
             var message = {"message": "Hello too!"};
             returnData = JSON.stringify(message);
+        } else {
+            res.writeHead(404);
         }
      }
      
